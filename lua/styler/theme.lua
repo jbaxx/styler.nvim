@@ -40,7 +40,7 @@ function M:before()
   vim.go.eventignore = "all"
 
   -- set to nil, so most themes won't run `hi clear` to prevent flickering
-  vim.g.colors_name = nil
+  -- vim.g.colors_name = nil
 
   -- override nvim_set_hl to use the namespace instead
   self.set_hl = vim.api.nvim_set_hl
@@ -67,7 +67,7 @@ function M:after()
     )
   else
     -- set to nil, so most themes won't run `hi clear` to prevent flickering
-    vim.g.colors_name = nil
+    -- vim.g.colors_name = nil
   end
 
   -- restore nvim_set_hl
